@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #212121;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100vw; /* Largura total da tela */
+    height: 18vh; /* Altura para ocupar mais espaço */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos padrão da logo e do nome */
+.logo {
+    width: 14vh; /* Tamanho proporcional à altura da tela */
+    height: auto;
+}
+
+h1 {
+    font-size: 7vh; /* Tamanho proporcional à altura da tela */
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos das divs de informação 
+.info-div {
+    background-color: white;
+    width: 100%;
+    margin: 15px 0;
+    padding: 20px;
+    padding-left: 15px; /* Adiciona um espaçamento à esquerda 
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: left;  Alinha o texto à esquerda 
+    min-height: 150px;
+}*/
+
+.info-div {
+    background-color: #212121;
+    width: 80%;
+    margin: 10px 0;
+    padding: 11px;
+    padding-left: 20px; /* Adiciona um espaçamento à esquerda */
+    border-radius: 8px;
+   /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.459);*/
+    text-align: left;
+    min-height: 10px;
+}
+
+h2 {
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+h3 {
+    margin-top: 0;
+    color: #858585;
+}
+
+p {
+    color: #858585;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    header {
+        height: 15vh;
+    }
+
+    .logo {
+        width: 12vh;
+    }
+
+    h1 {
+        font-size: 5vh;
+    }
+}
+
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 10px;
+    width: 100%;
+    margin-top: auto; /* Mantém o footer na parte inferior */
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
